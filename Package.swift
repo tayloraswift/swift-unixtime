@@ -7,6 +7,8 @@ let package:Package = .init(
     name: "swift-unixtime",
     platforms: [.macOS(.v13), .iOS(.v16), .tvOS(.v16), .watchOS(.v9)],
     products: [
+        .library(name: "CasesByIntegerEncodingMacro", targets: ["CasesByIntegerEncodingMacro"]),
+
         .library(name: "UnixCalendar", targets: ["UnixCalendar"]),
         .library(name: "UnixTime", targets: ["UnixTime"])
     ],
@@ -25,9 +27,6 @@ switch ProcessInfo.processInfo.environment["SWIFTPM_ENABLE_MACROS"]?.lowercased(
 case "1"?, "true"?:
     package.dependencies.append(.package(url: "https://github.com/apple/swift-syntax",
         "510.0.2" ..< "601.0.0-prerelease"))
-
-    package.products.append(.library(name: "CasesByIntegerEncodingMacro",
-        targets: ["CasesByIntegerEncodingMacro"]))
 
     package.targets.append(.macro(name: "CasesByIntegerEncoding",
         dependencies: [
@@ -52,7 +51,13 @@ case "1"?, "true"?:
         ]))
 
 default:
+    package.targets.append(.target(name: "CasesByIntegerEncodingMacro",
+        path: "Macros/CasesByIntegerEncodingMacro"))
+
     package.targets.append(.target(name: "ISO",
+        dependencies: [
+            .target(name: "CasesByIntegerEncodingMacro"),
+        ],
         exclude: [
             "ISO.Country.swift",
             "ISO.Macrolanguage.swift",
