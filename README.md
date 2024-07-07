@@ -11,7 +11,9 @@
 
 The ***`swift-unixtime`*** library is a portable, Foundation-free library for working with machine time and its human-readable representations.
 
-Swift UnixTime is not a date computation library; use [davedelong.time](https://github.com/davedelong/time) for that. Swift UnixTime is principally concerned with static typing, unit safety, and minimizing binary size. It represents temporal concepts in a persistence-friendly format, optimizing for use cases such as task scheduling in long-running server applications. One of the paramount goals of this library is to allow other libraries to exchange strongly-typed values with zero overhead without falling back to raw integer representations or linking against large frameworks.
+Swift UnixTime is not a date computation library; use [davedelong.time](https://github.com/davedelong/time) for that. Swift UnixTime is principally concerned with static typing, unit safety, and minimizing binary size. It represents temporal concepts in a persistence-friendly format, optimizing for use cases such as task scheduling in long-running server applications.
+
+One of the paramount goals of this library is to allow other libraries to exchange strongly-typed values with zero overhead without falling back to raw integer representations or linking against large frameworks.
 
 <div align="center">
 
