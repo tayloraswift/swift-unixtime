@@ -3,7 +3,7 @@ import PackageDescription
 
 let package:Package = .init(
     name: "Swift UnixTime",
-    platforms: [.macOS(.v14), .iOS(.v13), .tvOS(.v13), .watchOS(.v6)],
+    platforms: [.macOS(.v13), .iOS(.v16), .tvOS(.v16), .watchOS(.v9)],
     products: [
         .library(name: "UnixCalendar", targets: ["UnixCalendar"]),
         .library(name: "UnixTime", targets: ["UnixTime"])
