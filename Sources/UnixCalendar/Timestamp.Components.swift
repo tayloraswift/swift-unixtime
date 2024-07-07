@@ -110,30 +110,6 @@ extension Timestamp.Components
 }
 extension Timestamp.Components
 {
-    @available(*, deprecated, renamed: "Date.yyyymmdd")
-    @inlinable public
-    var yyyymmdd:String { "\(self.date.yyyymmdd)" }
-
-    @available(*, deprecated, renamed: "Date.mm")
-    @inlinable public
-    var MM:String { self.date.mm }
-
-    @available(*, deprecated, renamed: "Date.dd")
-    @inlinable public
-    var DD:String { self.date.dd }
-
-    @available(*, deprecated, renamed: "Time.hh")
-    @inlinable public
-    var hh:String { self.time.hh }
-
-    @available(*, deprecated, renamed: "Time.mm")
-    @inlinable public
-    var mm:String { self.time.mm }
-
-    @available(*, deprecated, renamed: "Time.ss")
-    @inlinable public
-    var ss:String { self.time.ss }
-
     @inlinable public
     var yyyymmddThhmmssZ:String
     {

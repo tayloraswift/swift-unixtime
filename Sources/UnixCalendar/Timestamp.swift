@@ -1,3 +1,5 @@
+import ISO
+
 @frozen public
 struct Timestamp:Equatable, Hashable, Sendable
 {
@@ -28,9 +30,9 @@ extension Timestamp
     var http:String
     {
         """
-        \(self.weekday.short(.en)), \
+        \(self.weekday.short(.init(language: .en))), \
         \(self.date.day) \
-        \(self.date.mon(.en)) \
+        \(self.date.mon) \
         \(self.date.year) \
         \(self.time.hh):\(self.time.mm):\(self.time.ss) GMT
         """

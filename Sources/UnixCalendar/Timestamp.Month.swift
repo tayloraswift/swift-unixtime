@@ -1,3 +1,5 @@
+import ISO
+
 extension Timestamp
 {
     @frozen public
@@ -109,36 +111,71 @@ extension Timestamp.Month
 }
 extension Timestamp.Month
 {
+    /// Returns the three-letter abbreviation of the month in English.
     @inlinable public
-    func short(_ locale:Timestamp.Locale) -> String
+    var short:String
     {
-        switch locale
+        switch self
         {
-        case .en:
-            switch self
-            {
-            case .january:      "Jan"
-            case .february:     "Feb"
-            case .march:        "Mar"
-            case .april:        "Apr"
-            case .may:          "May"
-            case .june:         "Jun"
-            case .july:         "Jul"
-            case .august:       "Aug"
-            case .september:    "Sep"
-            case .october:      "Oct"
-            case .november:     "Nov"
-            case .december:     "Dec"
-            }
+        case .january:      "Jan"
+        case .february:     "Feb"
+        case .march:        "Mar"
+        case .april:        "Apr"
+        case .may:          "May"
+        case .june:         "Jun"
+        case .july:         "Jul"
+        case .august:       "Aug"
+        case .september:    "Sep"
+        case .october:      "Oct"
+        case .november:     "Nov"
+        case .december:     "Dec"
         }
     }
 
     @inlinable public
-    func long(_ locale:Timestamp.Locale) -> String
+    func long(_ locale:ISO.Locale, capitalized:Bool = false) -> String
     {
-        switch locale
+        switch locale.language
         {
-        case .en:
+        case .es:
+            if  capitalized
+            {
+                switch self
+                {
+                case .january:      "Enero"
+                case .february:     "Febrero"
+                case .march:        "Marzo"
+                case .april:        "Abril"
+                case .may:          "Mayo"
+                case .june:         "Junio"
+                case .july:         "Julio"
+                case .august:       "Agosto"
+                case .september:    "Septiembre"
+                case .october:      "Octubre"
+                case .november:     "Noviembre"
+                case .december:     "Diciembre"
+                }
+            }
+            else
+            {
+                switch self
+                {
+                case .january:      "enero"
+                case .february:     "febrero"
+                case .march:        "marzo"
+                case .april:        "abril"
+                case .may:          "mayo"
+                case .june:         "junio"
+                case .july:         "julio"
+                case .august:       "agosto"
+                case .september:    "septiembre"
+                case .october:      "octubre"
+                case .november:     "noviembre"
+                case .december:     "diciembre"
+                }
+            }
+
+        case .en, _:
             switch self
             {
             case .january:      "January"

@@ -1,3 +1,5 @@
+import ISO
+
 extension Timestamp
 {
     @frozen public
@@ -161,40 +163,34 @@ extension Timestamp.Date
 }
 extension Timestamp.Date
 {
-    /// Same as calling ``Month/short(_:)`` on ``month``.
+    /// Same as calling ``Month/short`` on ``month``.
     @inlinable public
-    func mon(_ locale:Timestamp.Locale) -> String
-    {
-        switch locale
-        {
-        case .en:   self.month.short(locale)
-        }
-    }
+    var mon:String { self.month.short }
 
     /// Same as calling ``Month/long(_:)`` on ``month``.
     @inlinable public
-    func month(_ locale:Timestamp.Locale) -> String
+    func month(_ locale:ISO.Locale) -> String { self.month.long(locale) }
+
+    /// Formats the date in short form (`Jan 1, 1959`) in the given locale if supported, in
+    /// English otherwise.
+    @inlinable public
+    func short(_ locale:ISO.Locale) -> String
     {
-        switch locale
+        switch locale.language
         {
-        case .en:   self.month.long(locale)
+        case _:     "\(self.month.short) \(self.day), \(self.year)"
         }
     }
 
+    /// Formats the date in long form (`1 de enero de 1959`) in the given locale if supported,
+    /// in English otherwise.
     @inlinable public
-    func short(_ locale:Timestamp.Locale) -> String
+    func long(_ locale:ISO.Locale) -> String
     {
-        switch locale
+        switch locale.language
         {
-        case .en:   "\(self.month.short(locale)) \(self.day), \(self.year)"
-        }
-    }
-    @inlinable public
-    func long(_ locale:Timestamp.Locale) -> String
-    {
-        switch locale
-        {
-        case .en:   "\(self.month.long(locale)) \(self.day), \(self.year)"
+        case .es:   "\(self.day) de \(self.month.long(locale)) de \(self.year)"
+        case _:     "\(self.month.long(.init(language: .en))) \(self.day), \(self.year)"
         }
     }
 }
