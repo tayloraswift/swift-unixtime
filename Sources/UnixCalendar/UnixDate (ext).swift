@@ -5,10 +5,11 @@ extension UnixDate
     /// TODO: we ought to be able to perform the date arithmetic in the `UnixDate` type itself,
     /// without calling into the operating system.
     @inlinable public
-    init?(utc date:Timestamp.Date)
+    init?(utc date:Timestamp.Date,
+        sanity checks:Timestamp.Sanity = .year(in: 1970 ... 2970))
     {
         guard
-        let attosecond:UnixAttosecond = .init(utc: .init(date: date))
+        let attosecond:UnixAttosecond = .init(utc: .init(date: date), sanity: checks)
         else
         {
             return nil
