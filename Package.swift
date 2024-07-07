@@ -9,6 +9,7 @@ let package:Package = .init(
     products: [
         .library(name: "CasesByIntegerEncodingMacro", targets: ["CasesByIntegerEncodingMacro"]),
 
+        .library(name: "ISO", targets: ["ISO"]),
         .library(name: "UnixCalendar", targets: ["UnixCalendar"]),
         .library(name: "UnixTime", targets: ["UnixTime"])
     ],
