@@ -1,7 +1,7 @@
 public
 protocol QuantizedDuration:RawRepresentable<Int64>, DurationProtocol, Hashable
 {
-    static var unit:String { get }
+    static var unit:DurationFormat.Unit { get }
 
     var count:Int64 { get }
 

@@ -17,11 +17,15 @@ extension Seconds
 
     @inlinable public
     init(_ minutes:Minutes) { self.init(count: minutes.count * 60) }
+    @inlinable public
+    init(_ hours:Hours) { self.init(count: hours.count * 3600) }
+    @inlinable public
+    init(_ days:Days) { self.init(count: days.count * 86_400) }
 }
 extension Seconds:QuantizedDuration
 {
     @inlinable public static
-    var unit:String { "s" }
+    var unit:DurationFormat.Unit { .seconds }
 
     @inlinable public
     init(truncating duration:Duration)

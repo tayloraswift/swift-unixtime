@@ -30,11 +30,19 @@ extension Milliseconds
     /// Creates a new duration by scaling the specified minute-precision duration.
     @inlinable public
     init(_ minutes:Minutes) { self.init(count: minutes.count * 60_000) }
+
+    /// Creates a new duration by scaling the specified hour-precision duration.
+    @inlinable public
+    init(_ hours:Hours) { self.init(count: hours.count * 3_600_000) }
+
+    /// Creates a new duration by scaling the specified day-precision duration.
+    @inlinable public
+    init(_ days:Days) { self.init(count: days.count * 86_400_000) }
 }
 extension Milliseconds:QuantizedDuration
 {
     @inlinable public static
-    var unit:String { "ms" }
+    var unit:DurationFormat.Unit { .milliseconds }
 
     @inlinable public
     init(truncating duration:Duration)

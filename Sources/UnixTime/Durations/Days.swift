@@ -22,7 +22,7 @@ extension Days
 extension Days:QuantizedDuration
 {
     @inlinable public
-    static var unit:String { "d" }
+    static var unit:DurationFormat.Unit { .days }
 
     @inlinable public
     init(truncating duration:Duration)
