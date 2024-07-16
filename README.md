@@ -1,6 +1,6 @@
 <div align="center">
 
-***`unixtime`***<br>`0.1`
+***`unixtime`***
 
 [![ci status](https://github.com/tayloraswift/swift-unixtime/actions/workflows/ci.yml/badge.svg)](https://github.com/tayloraswift/swift-unixtime/actions/workflows/ci.yml)
 

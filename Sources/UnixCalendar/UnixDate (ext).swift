@@ -21,4 +21,7 @@ extension UnixDate
     /// Returns the current UTC date by calling into the operating system.
     @inlinable public
     static func today() -> Self { .init(truncating: UnixAttosecond.now()) }
+
+    public
+    var timestamp:Timestamp? { .init(secondSinceEpoch: Int.init(self.index * 86_400)) }
 }
