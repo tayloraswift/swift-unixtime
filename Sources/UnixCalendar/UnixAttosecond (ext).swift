@@ -81,38 +81,5 @@ extension UnixAttosecond
     }
 
     public
-    var timestamp:Timestamp?
-    {
-        var segmented:tm = .init(
-            tm_sec:     -1,
-            tm_min:     -1,
-            tm_hour:    -1,
-            tm_mday:    -1,
-            tm_mon:     -1, // month in range 0 ... 11 !
-            tm_year:    -1,
-            tm_wday:    -1,
-            tm_yday:    -1,
-            tm_isdst:   0,
-
-            tm_gmtoff:  0,
-            tm_zone:    nil)
-
-        let second:Int = .init(self.second)
-
-        guard withUnsafePointer(to: second, { gmtime_r($0, &segmented) }) != nil,
-        let weekday:Timestamp.Weekday = .init(rawValue: Int.init(segmented.tm_wday)),
-        let month:Timestamp.Month = .init(rawValue: segmented.tm_mon + 1)
-        else
-        {
-            return nil
-        }
-
-        return .init(weekday: weekday,
-            date: .init(year: .init(rawValue: segmented.tm_year + 1900),
-                month: month,
-                day: segmented.tm_mday),
-            time: .init(hour: segmented.tm_hour,
-                minute: segmented.tm_min,
-                second: segmented.tm_sec))
-    }
+    var timestamp:Timestamp? { .init(secondSinceEpoch: Int.init(self.second)) }
 }

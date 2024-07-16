@@ -19,4 +19,7 @@ extension UnixMillisecond
     /// Returns the current millisecond-precision time by calling into the operating system.
     public
     static func now() -> Self { .init(truncating: .now()) }
+
+    public
+    var timestamp:Timestamp? { .init(secondSinceEpoch: Int.init(self.index / 1_000)) }
 }
