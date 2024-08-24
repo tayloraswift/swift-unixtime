@@ -27,18 +27,15 @@ extension UnixAttosecond
     public
     static func now() -> Self
     {
-        withUnsafeTemporaryAllocation(of: timespec.self, capacity: 1)
-        {
-            guard clock_gettime(CLOCK_REALTIME, $0.baseAddress) == 0
-            else
-            {
-                fatalError("system clock unavailable! (CLOCK_REALTIME)")
-            }
+        var time:timespec = .init()
 
-            let time:timespec = $0[0]
-            return .second(Int64.init(time.tv_sec),
-                attoseconds: Int64.init(time.tv_nsec) * 1_000_000_000)
+        if  clock_gettime(CLOCK_REALTIME, &time) != 0
+        {
+            fatalError("system clock unavailable! (CLOCK_REALTIME)")
         }
+
+        return .second(Int64.init(time.tv_sec),
+            attoseconds: Int64.init(time.tv_nsec) * 1_000_000_000)
     }
 }
 extension UnixAttosecond
