@@ -7,8 +7,8 @@ on:
         branches: [ master ]
 
 jobs:
-    linux:
-        runs-on: ubuntu-22.04
+    server:
+        runs-on: ubuntu-24.04
         name: Amazon Linux 2023
 
         strategy:
@@ -28,6 +28,49 @@ jobs:
                         -w /swift-hash \
                         ${{ matrix.image }} \
                         .github/pipeline
+
+    linux:
+        runs-on: ubuntu-24.04
+        name: Ubuntu 24.04
+
+        env:
+            SWIFT_PREFIX: "swift-5.10.1-release/ubuntu2404/swift-5.10.1-RELEASE"
+            SWIFT_ID: "swift-5.10.1-RELEASE-ubuntu24.04"
+
+        steps:
+            -   name: Cache Swift toolchain
+                uses: actions/cache@v2
+                with:
+                    path: ${{ env.SWIFT_ID }}.tar.gz
+                    key: ${{ env.SWIFT_ID }}
+
+            -   name: Cache status
+                id:   cache_status
+                uses: andstor/file-existence-action@v1
+                with:
+                    files: ${{ env.SWIFT_ID }}.tar.gz
+
+            -   name: Download Swift
+                if: steps.cache_status.outputs.files_exists == 'false'
+                run: |
+                    curl https://download.swift.org/$SWIFT_PREFIX/$SWIFT_ID.tar.gz \
+                        --output $SWIFT_ID.tar.gz
+
+            -   name: Set up Swift
+                run: |
+                    mkdir -p $HOME/$SWIFT_ID
+                    tar -xzf $SWIFT_ID.tar.gz -C $HOME/$SWIFT_ID --strip 1
+                    echo "$HOME/$SWIFT_ID/usr/bin" >> $GITHUB_PATH
+                    cat $GITHUB_PATH
+
+            #   This clobbers everything in the current directory, which is why we installed
+            #   the Swift toolchain in the home directory.
+            -   name: Checkout repository
+                uses: actions/checkout@v3
+
+            -   name: Run pipeline
+                run: .github/pipeline
+
 
     macos:
         runs-on: macos-14
