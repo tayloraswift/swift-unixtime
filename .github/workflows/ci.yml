@@ -77,7 +77,8 @@ jobs:
                     unidoc-version: "master"
 
             -   name: Validate documentation
-                run: unidoc compile -I .. \
+                run: |
+                    unidoc compile -I .. \
                     --swift-toolchain $HOME/$SWIFT_ID/usr/ \
                     --ci fail-on-errors \
                     --package-name swift-unixtime
