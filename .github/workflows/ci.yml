@@ -71,6 +71,17 @@ jobs:
             -   name: Run pipeline
                 run: .github/pipeline
 
+            -   name: Install Unidoc
+                uses: tayloraswift/swift-unidoc-action@master
+                with:
+                    unidoc-version: "master"
+
+            -   name: Validate documentation
+                run: |
+                    unidoc compile -I .. \
+                    --swift-toolchain $HOME/$SWIFT_ID/usr/ \
+                    --ci fail-on-errors \
+                    --package-name swift-unixtime
 
     macos:
         runs-on: macos-14

@@ -96,7 +96,8 @@ extension Timestamp.Date:LosslessStringConvertible
 {
     /// Parses the date as `yyyy-mm-dd`.
     ///
-    /// To customize the separator, use ``init(_:separator:)``.
+    /// To customize the separator, use ``init(_:separator:) [725PA]`` or
+    /// ``init(_:separator:) [3GRG1]``.
     @inlinable public
     init?(_ description:String)
     {
@@ -167,7 +168,7 @@ extension Timestamp.Date
     @inlinable public
     var mon:String { self.month.short }
 
-    /// Same as calling ``Month/long(_:)`` on ``month``.
+    /// Same as calling ``Month/long(_:capitalized:)`` on ``month``.
     @inlinable public
     func month(_ locale:ISO.Locale) -> String { self.month.long(locale) }
 
