@@ -167,7 +167,7 @@ extension Timestamp.Date
     @inlinable public
     var mon:String { self.month.short }
 
-    /// Same as calling ``Month/long(_:)`` on ``month``.
+    /// Same as calling ``Month/long(_:capitalized:)`` on ``month``.
     @inlinable public
     func month(_ locale:ISO.Locale) -> String { self.month.long(locale) }
 
