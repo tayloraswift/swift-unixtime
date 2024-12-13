@@ -1,4 +1,4 @@
-#if canImport(CasesByIntegerEncoding)
+#if ENABLE_MACROS
 
 @attached(extension, names: arbitrary, conformances: RawRepresentableByIntegerEncoding)
 public

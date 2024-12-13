@@ -265,6 +265,51 @@ extension ISO
             case za
             case zm
             case zw
+
+            //  Reserved codes
+            case aa
+            case oo
+            case qm
+            case qn
+            case qo
+            case qp
+            case qq
+            case qr
+            case qs
+            case qt
+            case qu
+            case qv
+            case qw
+            case qx
+            case qy
+            case qz
+            case xa
+            case xb
+            case xc
+            case xd
+            case xe
+            case xf
+            case xg
+            case xh
+            case xi
+            case xj
+            case xk
+            case xl
+            case xm
+            case xn
+            case xo
+            case xp
+            case xq
+            case xr
+            case xs
+            case xt
+            case xu
+            case xv
+            case xw
+            case xx
+            case xy
+            case xz
+            case zz
         }
     }
 }

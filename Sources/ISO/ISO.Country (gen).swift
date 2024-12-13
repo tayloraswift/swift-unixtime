@@ -1258,6 +1258,178 @@ extension ISO.Country {
     var zw: Self {
         .init(rawValue: 0x7a77)
     }
+    @inlinable public static
+    var aa: Self {
+        .init(rawValue: 0x6161)
+    }
+    @inlinable public static
+    var oo: Self {
+        .init(rawValue: 0x6f6f)
+    }
+    @inlinable public static
+    var qm: Self {
+        .init(rawValue: 0x716d)
+    }
+    @inlinable public static
+    var qn: Self {
+        .init(rawValue: 0x716e)
+    }
+    @inlinable public static
+    var qo: Self {
+        .init(rawValue: 0x716f)
+    }
+    @inlinable public static
+    var qp: Self {
+        .init(rawValue: 0x7170)
+    }
+    @inlinable public static
+    var qq: Self {
+        .init(rawValue: 0x7171)
+    }
+    @inlinable public static
+    var qr: Self {
+        .init(rawValue: 0x7172)
+    }
+    @inlinable public static
+    var qs: Self {
+        .init(rawValue: 0x7173)
+    }
+    @inlinable public static
+    var qt: Self {
+        .init(rawValue: 0x7174)
+    }
+    @inlinable public static
+    var qu: Self {
+        .init(rawValue: 0x7175)
+    }
+    @inlinable public static
+    var qv: Self {
+        .init(rawValue: 0x7176)
+    }
+    @inlinable public static
+    var qw: Self {
+        .init(rawValue: 0x7177)
+    }
+    @inlinable public static
+    var qx: Self {
+        .init(rawValue: 0x7178)
+    }
+    @inlinable public static
+    var qy: Self {
+        .init(rawValue: 0x7179)
+    }
+    @inlinable public static
+    var qz: Self {
+        .init(rawValue: 0x717a)
+    }
+    @inlinable public static
+    var xa: Self {
+        .init(rawValue: 0x7861)
+    }
+    @inlinable public static
+    var xb: Self {
+        .init(rawValue: 0x7862)
+    }
+    @inlinable public static
+    var xc: Self {
+        .init(rawValue: 0x7863)
+    }
+    @inlinable public static
+    var xd: Self {
+        .init(rawValue: 0x7864)
+    }
+    @inlinable public static
+    var xe: Self {
+        .init(rawValue: 0x7865)
+    }
+    @inlinable public static
+    var xf: Self {
+        .init(rawValue: 0x7866)
+    }
+    @inlinable public static
+    var xg: Self {
+        .init(rawValue: 0x7867)
+    }
+    @inlinable public static
+    var xh: Self {
+        .init(rawValue: 0x7868)
+    }
+    @inlinable public static
+    var xi: Self {
+        .init(rawValue: 0x7869)
+    }
+    @inlinable public static
+    var xj: Self {
+        .init(rawValue: 0x786a)
+    }
+    @inlinable public static
+    var xk: Self {
+        .init(rawValue: 0x786b)
+    }
+    @inlinable public static
+    var xl: Self {
+        .init(rawValue: 0x786c)
+    }
+    @inlinable public static
+    var xm: Self {
+        .init(rawValue: 0x786d)
+    }
+    @inlinable public static
+    var xn: Self {
+        .init(rawValue: 0x786e)
+    }
+    @inlinable public static
+    var xo: Self {
+        .init(rawValue: 0x786f)
+    }
+    @inlinable public static
+    var xp: Self {
+        .init(rawValue: 0x7870)
+    }
+    @inlinable public static
+    var xq: Self {
+        .init(rawValue: 0x7871)
+    }
+    @inlinable public static
+    var xr: Self {
+        .init(rawValue: 0x7872)
+    }
+    @inlinable public static
+    var xs: Self {
+        .init(rawValue: 0x7873)
+    }
+    @inlinable public static
+    var xt: Self {
+        .init(rawValue: 0x7874)
+    }
+    @inlinable public static
+    var xu: Self {
+        .init(rawValue: 0x7875)
+    }
+    @inlinable public static
+    var xv: Self {
+        .init(rawValue: 0x7876)
+    }
+    @inlinable public static
+    var xw: Self {
+        .init(rawValue: 0x7877)
+    }
+    @inlinable public static
+    var xx: Self {
+        .init(rawValue: 0x7878)
+    }
+    @inlinable public static
+    var xy: Self {
+        .init(rawValue: 0x7879)
+    }
+    @inlinable public static
+    var xz: Self {
+        .init(rawValue: 0x787a)
+    }
+    @inlinable public static
+    var zz: Self {
+        .init(rawValue: 0x7a7a)
+    }
 }
 extension ISO.Country:Comparable
 {

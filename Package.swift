@@ -40,7 +40,10 @@ case "1"?, "true"?:
         dependencies: [
             .target(name: "CasesByIntegerEncoding"),
         ],
-        path: "Macros/CasesByIntegerEncodingMacro"))
+        path: "Macros/CasesByIntegerEncodingMacro",
+        swiftSettings: [
+            .define("ENABLE_MACROS"),
+        ]))
 
     package.targets.append(.target(name: "ISO",
         dependencies: [
