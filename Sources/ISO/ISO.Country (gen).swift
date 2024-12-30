@@ -17,1418 +17,1461 @@ extension ISO
         private
         enum AvailableCases
         {
-            case ad
-            case ae
-            case af
-            case ag
-            case ai
-            case al
-            case am
-            case ao
-            case aq
-            case ar
-            case `as`
-            case at
-            case au
-            case aw
-            case ax
-            case az
-            case ba
-            case bb
-            case bd
-            case be
-            case bf
-            case bg
-            case bh
-            case bi
-            case bj
-            case bl
-            case bm
-            case bn
-            case bo
-            case bq
-            case br
-            case bs
-            case bt
-            case bv
-            case bw
-            case by
-            case bz
-            case ca
-            case cc
-            case cd
-            case cf
-            case cg
-            case ch
-            case ci
-            case ck
-            case cl
-            case cm
-            case cn
-            case co
-            case cr
-            case cu
-            case cv
-            case cw
-            case cx
-            case cy
-            case cz
-            case de
-            case dj
-            case dk
-            case dm
-            case `do`
-            case dz
-            case ec
-            case ee
-            case eg
-            case eh
-            case er
-            case es
-            case et
-            case fi
-            case fj
-            case fk
-            case fm
-            case fo
-            case fr
-            case ga
-            case gb
-            case gd
-            case ge
-            case gf
-            case gg
-            case gh
-            case gi
-            case gl
-            case gm
-            case gn
-            case gp
-            case gq
-            case gr
-            case gs
-            case gt
-            case gu
-            case gw
-            case gy
-            case hk
-            case hm
-            case hn
-            case hr
-            case ht
-            case hu
-            case id
-            case ie
-            case il
-            case im
-            case `in`
-            case io
-            case iq
-            case ir
-            case `is`
-            case it
-            case je
-            case jm
-            case jo
-            case jp
-            case ke
-            case kg
-            case kh
-            case ki
-            case km
-            case kn
-            case kp
-            case kr
-            case kw
-            case ky
-            case kz
-            case la
-            case lb
-            case lc
-            case li
-            case lk
-            case lr
-            case ls
-            case lt
-            case lu
-            case lv
-            case ly
-            case ma
-            case mc
-            case md
-            case me
-            case mf
-            case mg
-            case mh
-            case mk
-            case ml
-            case mm
-            case mn
-            case mo
-            case mp
-            case mq
-            case mr
-            case ms
-            case mt
-            case mu
-            case mv
-            case mw
-            case mx
-            case my
-            case mz
-            case na
-            case nc
-            case ne
-            case nf
-            case ng
-            case ni
-            case nl
-            case no
-            case np
-            case nr
-            case nu
-            case nz
-            case om
-            case pa
-            case pe
-            case pf
-            case pg
-            case ph
-            case pk
-            case pl
-            case pm
-            case pn
-            case pr
+            case AD
+            case AE
+            case AF
+            case AG
+            case AI
+            case AL
+            case AM
+            case AO
+            case AQ
+            case AR
+            case AS
+            case AT
+            case AU
+            case AW
+            case AX
+            case AZ
+            case BA
+            case BB
+            case BD
+            case BE
+            case BF
+            case BG
+            case BH
+            case BI
+            case BJ
+            case BL
+            case BM
+            case BN
+            case BO
+            case BQ
+            case BR
+            case BS
+            case BT
+            case BV
+            case BW
+            case BY
+            case BZ
+            case CA
+            case CC
+            case CD
+            case CF
+            case CG
+            case CH
+            case CI
+            case CK
+            case CL
+            case CM
+            case CN
+            case CO
+            case CR
+            case CU
+            case CV
+            case CW
+            case CX
+            case CY
+            case CZ
+            case DE
+            case DJ
+            case DK
+            case DM
+            case DO
+            case DZ
+            case EC
+            case EE
+            case EG
+            case EH
+            case ER
+            case ES
+            case ET
+            case FI
+            case FJ
+            case FK
+            case FM
+            case FO
+            case FR
+            case GA
+            case GB
+            case GD
+            case GE
+            case GF
+            case GG
+            case GH
+            case GI
+            case GL
+            case GM
+            case GN
+            case GP
+            case GQ
+            case GR
+            case GS
+            case GT
+            case GU
+            case GW
+            case GY
+            case HK
+            case HM
+            case HN
+            case HR
+            case HT
+            case HU
+            case ID
+            case IE
+            case IL
+            case IM
+            case IN
+            case IO
+            case IQ
+            case IR
+            case IS
+            case IT
+            case JE
+            case JM
+            case JO
+            case JP
+            case KE
+            case KG
+            case KH
+            case KI
+            case KM
+            case KN
+            case KP
+            case KR
+            case KW
+            case KY
+            case KZ
+            case LA
+            case LB
+            case LC
+            case LI
+            case LK
+            case LR
+            case LS
+            case LT
+            case LU
+            case LV
+            case LY
+            case MA
+            case MC
+            case MD
+            case ME
+            case MF
+            case MG
+            case MH
+            case MK
+            case ML
+            case MM
+            case MN
+            case MO
+            case MP
+            case MQ
+            case MR
+            case MS
+            case MT
+            case MU
+            case MV
+            case MW
+            case MX
+            case MY
+            case MZ
+            case NA
+            case NC
+            case NE
+            case NF
+            case NG
+            case NI
+            case NL
+            case NO
+            case NP
+            case NR
+            case NU
+            case NZ
+            case OM
+            case PA
+            case PE
+            case PF
+            case PG
+            case PH
+            case PK
+            case PL
+            case PM
+            case PN
+            case PR
+            case PT
+            case PW
+            case PY
+            case QA
+            case RE
+            case RO
+            case RS
+            case RU
+            case RW
+            case SA
+            case SB
+            case SC
+            case SD
+            case SE
+            case SG
+            case SH
+            case SI
+            case SJ
+            case SK
+            case SL
+            case SM
+            case SN
+            case SO
+            case SR
+            case SS
+            case ST
+            case SV
+            case SX
+            case SY
+            case SZ
+            case TC
+            case TD
+            case TF
+            case TG
+            case TH
+            case TJ
+            case TK
+            case TL
+            case TM
+            case TN
+            case TO
+            case TR
+            case TT
+            case TV
+            case TZ
+            case UA
+            case UG
+            case UM
+            case US
+            case UY
+            case UZ
+            case VA
+            case VC
+            case VE
+            case VG
+            case VI
+            case VN
+            case VU
+            case WF
+            case WS
+            case YE
+            case YT
+            case ZA
+            case ZM
+            case ZW
 
-            case pt
-            case pw
-            case py
-            case qa
-            case re
-            case ro
-            case rs
-            case ru
-            case rw
-            case sa
-            case sb
-            case sc
-            case sd
-            case se
-            case sg
-            case sh
-            case si
-            case sj
-            case sk
-            case sl
-            case sm
-            case sn
-            case so
-            case sr
-            case ss
-            case st
-            case sv
-            case sx
-            case sy
-            case sz
-            case tc
-            case td
-            case tf
-            case tg
-            case th
-            case tj
-            case tk
-            case tl
-            case tm
-            case tn
-            case to
-            case tr
-            case tt
-            case tv
-
-            case tz
-            case ua
-            case ug
-            case um
-            case us
-            case uy
-            case uz
-            case va
-            case vc
-            case ve
-            case vg
-            case vi
-            case vn
-            case vu
-            case wf
-            case ws
-            case ye
-            case yt
-            case za
-            case zm
-            case zw
+            //  Reserved codes
+            case AA
+            case OO
+            case QM
+            case QN
+            case QO
+            case QP
+            case QQ
+            case QR
+            case QS
+            case QT
+            case QU
+            case QV
+            case QW
+            case QX
+            case QY
+            case QZ
+            case XA
+            case XB
+            case XC
+            case XD
+            case XE
+            case XF
+            case XG
+            case XH
+            case XI
+            case XJ
+            case XK
+            case XL
+            case XM
+            case XN
+            case XO
+            case XP
+            case XQ
+            case XR
+            case XS
+            case XT
+            case XU
+            case XV
+            case XW
+            case XX
+            case XY
+            case XZ
+            case ZZ
         }
     }
 }
 extension ISO.Country {
     @inlinable public static
-    var ad: Self {
-        .init(rawValue: 0x6164)
+    var AD: Self {
+        .init(rawValue: 0x4144)
     }
     @inlinable public static
-    var ae: Self {
-        .init(rawValue: 0x6165)
+    var AE: Self {
+        .init(rawValue: 0x4145)
     }
     @inlinable public static
-    var af: Self {
-        .init(rawValue: 0x6166)
+    var AF: Self {
+        .init(rawValue: 0x4146)
     }
     @inlinable public static
-    var ag: Self {
-        .init(rawValue: 0x6167)
+    var AG: Self {
+        .init(rawValue: 0x4147)
     }
     @inlinable public static
-    var ai: Self {
-        .init(rawValue: 0x6169)
+    var AI: Self {
+        .init(rawValue: 0x4149)
     }
     @inlinable public static
-    var al: Self {
-        .init(rawValue: 0x616c)
+    var AL: Self {
+        .init(rawValue: 0x414c)
     }
     @inlinable public static
-    var am: Self {
-        .init(rawValue: 0x616d)
+    var AM: Self {
+        .init(rawValue: 0x414d)
     }
     @inlinable public static
-    var ao: Self {
-        .init(rawValue: 0x616f)
+    var AO: Self {
+        .init(rawValue: 0x414f)
     }
     @inlinable public static
-    var aq: Self {
-        .init(rawValue: 0x6171)
+    var AQ: Self {
+        .init(rawValue: 0x4151)
     }
     @inlinable public static
-    var ar: Self {
-        .init(rawValue: 0x6172)
+    var AR: Self {
+        .init(rawValue: 0x4152)
     }
     @inlinable public static
-    var `as`: Self {
-        .init(rawValue: 0x6173)
+    var AS: Self {
+        .init(rawValue: 0x4153)
     }
     @inlinable public static
-    var at: Self {
-        .init(rawValue: 0x6174)
+    var AT: Self {
+        .init(rawValue: 0x4154)
     }
     @inlinable public static
-    var au: Self {
-        .init(rawValue: 0x6175)
+    var AU: Self {
+        .init(rawValue: 0x4155)
     }
     @inlinable public static
-    var aw: Self {
-        .init(rawValue: 0x6177)
+    var AW: Self {
+        .init(rawValue: 0x4157)
     }
     @inlinable public static
-    var ax: Self {
-        .init(rawValue: 0x6178)
+    var AX: Self {
+        .init(rawValue: 0x4158)
     }
     @inlinable public static
-    var az: Self {
-        .init(rawValue: 0x617a)
+    var AZ: Self {
+        .init(rawValue: 0x415a)
     }
     @inlinable public static
-    var ba: Self {
-        .init(rawValue: 0x6261)
+    var BA: Self {
+        .init(rawValue: 0x4241)
     }
     @inlinable public static
-    var bb: Self {
-        .init(rawValue: 0x6262)
+    var BB: Self {
+        .init(rawValue: 0x4242)
     }
     @inlinable public static
-    var bd: Self {
-        .init(rawValue: 0x6264)
+    var BD: Self {
+        .init(rawValue: 0x4244)
     }
     @inlinable public static
-    var be: Self {
-        .init(rawValue: 0x6265)
+    var BE: Self {
+        .init(rawValue: 0x4245)
     }
     @inlinable public static
-    var bf: Self {
-        .init(rawValue: 0x6266)
+    var BF: Self {
+        .init(rawValue: 0x4246)
     }
     @inlinable public static
-    var bg: Self {
-        .init(rawValue: 0x6267)
+    var BG: Self {
+        .init(rawValue: 0x4247)
     }
     @inlinable public static
-    var bh: Self {
-        .init(rawValue: 0x6268)
+    var BH: Self {
+        .init(rawValue: 0x4248)
     }
     @inlinable public static
-    var bi: Self {
-        .init(rawValue: 0x6269)
+    var BI: Self {
+        .init(rawValue: 0x4249)
     }
     @inlinable public static
-    var bj: Self {
-        .init(rawValue: 0x626a)
+    var BJ: Self {
+        .init(rawValue: 0x424a)
     }
     @inlinable public static
-    var bl: Self {
-        .init(rawValue: 0x626c)
+    var BL: Self {
+        .init(rawValue: 0x424c)
     }
     @inlinable public static
-    var bm: Self {
-        .init(rawValue: 0x626d)
+    var BM: Self {
+        .init(rawValue: 0x424d)
     }
     @inlinable public static
-    var bn: Self {
-        .init(rawValue: 0x626e)
+    var BN: Self {
+        .init(rawValue: 0x424e)
     }
     @inlinable public static
-    var bo: Self {
-        .init(rawValue: 0x626f)
+    var BO: Self {
+        .init(rawValue: 0x424f)
     }
     @inlinable public static
-    var bq: Self {
-        .init(rawValue: 0x6271)
+    var BQ: Self {
+        .init(rawValue: 0x4251)
     }
     @inlinable public static
-    var br: Self {
-        .init(rawValue: 0x6272)
+    var BR: Self {
+        .init(rawValue: 0x4252)
     }
     @inlinable public static
-    var bs: Self {
-        .init(rawValue: 0x6273)
+    var BS: Self {
+        .init(rawValue: 0x4253)
     }
     @inlinable public static
-    var bt: Self {
-        .init(rawValue: 0x6274)
+    var BT: Self {
+        .init(rawValue: 0x4254)
     }
     @inlinable public static
-    var bv: Self {
-        .init(rawValue: 0x6276)
+    var BV: Self {
+        .init(rawValue: 0x4256)
     }
     @inlinable public static
-    var bw: Self {
-        .init(rawValue: 0x6277)
+    var BW: Self {
+        .init(rawValue: 0x4257)
     }
     @inlinable public static
-    var by: Self {
-        .init(rawValue: 0x6279)
+    var BY: Self {
+        .init(rawValue: 0x4259)
     }
     @inlinable public static
-    var bz: Self {
-        .init(rawValue: 0x627a)
+    var BZ: Self {
+        .init(rawValue: 0x425a)
     }
     @inlinable public static
-    var ca: Self {
-        .init(rawValue: 0x6361)
+    var CA: Self {
+        .init(rawValue: 0x4341)
     }
     @inlinable public static
-    var cc: Self {
-        .init(rawValue: 0x6363)
+    var CC: Self {
+        .init(rawValue: 0x4343)
     }
     @inlinable public static
-    var cd: Self {
-        .init(rawValue: 0x6364)
+    var CD: Self {
+        .init(rawValue: 0x4344)
     }
     @inlinable public static
-    var cf: Self {
-        .init(rawValue: 0x6366)
+    var CF: Self {
+        .init(rawValue: 0x4346)
     }
     @inlinable public static
-    var cg: Self {
-        .init(rawValue: 0x6367)
+    var CG: Self {
+        .init(rawValue: 0x4347)
     }
     @inlinable public static
-    var ch: Self {
-        .init(rawValue: 0x6368)
+    var CH: Self {
+        .init(rawValue: 0x4348)
     }
     @inlinable public static
-    var ci: Self {
-        .init(rawValue: 0x6369)
+    var CI: Self {
+        .init(rawValue: 0x4349)
     }
     @inlinable public static
-    var ck: Self {
-        .init(rawValue: 0x636b)
+    var CK: Self {
+        .init(rawValue: 0x434b)
     }
     @inlinable public static
-    var cl: Self {
-        .init(rawValue: 0x636c)
+    var CL: Self {
+        .init(rawValue: 0x434c)
     }
     @inlinable public static
-    var cm: Self {
-        .init(rawValue: 0x636d)
+    var CM: Self {
+        .init(rawValue: 0x434d)
     }
     @inlinable public static
-    var cn: Self {
-        .init(rawValue: 0x636e)
+    var CN: Self {
+        .init(rawValue: 0x434e)
     }
     @inlinable public static
-    var co: Self {
-        .init(rawValue: 0x636f)
+    var CO: Self {
+        .init(rawValue: 0x434f)
     }
     @inlinable public static
-    var cr: Self {
-        .init(rawValue: 0x6372)
+    var CR: Self {
+        .init(rawValue: 0x4352)
     }
     @inlinable public static
-    var cu: Self {
-        .init(rawValue: 0x6375)
+    var CU: Self {
+        .init(rawValue: 0x4355)
     }
     @inlinable public static
-    var cv: Self {
-        .init(rawValue: 0x6376)
+    var CV: Self {
+        .init(rawValue: 0x4356)
     }
     @inlinable public static
-    var cw: Self {
-        .init(rawValue: 0x6377)
+    var CW: Self {
+        .init(rawValue: 0x4357)
     }
     @inlinable public static
-    var cx: Self {
-        .init(rawValue: 0x6378)
+    var CX: Self {
+        .init(rawValue: 0x4358)
     }
     @inlinable public static
-    var cy: Self {
-        .init(rawValue: 0x6379)
+    var CY: Self {
+        .init(rawValue: 0x4359)
     }
     @inlinable public static
-    var cz: Self {
-        .init(rawValue: 0x637a)
+    var CZ: Self {
+        .init(rawValue: 0x435a)
     }
     @inlinable public static
-    var de: Self {
-        .init(rawValue: 0x6465)
+    var DE: Self {
+        .init(rawValue: 0x4445)
     }
     @inlinable public static
-    var dj: Self {
-        .init(rawValue: 0x646a)
+    var DJ: Self {
+        .init(rawValue: 0x444a)
     }
     @inlinable public static
-    var dk: Self {
-        .init(rawValue: 0x646b)
+    var DK: Self {
+        .init(rawValue: 0x444b)
     }
     @inlinable public static
-    var dm: Self {
-        .init(rawValue: 0x646d)
+    var DM: Self {
+        .init(rawValue: 0x444d)
     }
     @inlinable public static
-    var `do`: Self {
-        .init(rawValue: 0x646f)
+    var DO: Self {
+        .init(rawValue: 0x444f)
     }
     @inlinable public static
-    var dz: Self {
-        .init(rawValue: 0x647a)
+    var DZ: Self {
+        .init(rawValue: 0x445a)
     }
     @inlinable public static
-    var ec: Self {
-        .init(rawValue: 0x6563)
+    var EC: Self {
+        .init(rawValue: 0x4543)
     }
     @inlinable public static
-    var ee: Self {
-        .init(rawValue: 0x6565)
+    var EE: Self {
+        .init(rawValue: 0x4545)
     }
     @inlinable public static
-    var eg: Self {
-        .init(rawValue: 0x6567)
+    var EG: Self {
+        .init(rawValue: 0x4547)
     }
     @inlinable public static
-    var eh: Self {
-        .init(rawValue: 0x6568)
+    var EH: Self {
+        .init(rawValue: 0x4548)
     }
     @inlinable public static
-    var er: Self {
-        .init(rawValue: 0x6572)
+    var ER: Self {
+        .init(rawValue: 0x4552)
     }
     @inlinable public static
-    var es: Self {
-        .init(rawValue: 0x6573)
+    var ES: Self {
+        .init(rawValue: 0x4553)
     }
     @inlinable public static
-    var et: Self {
-        .init(rawValue: 0x6574)
+    var ET: Self {
+        .init(rawValue: 0x4554)
     }
     @inlinable public static
-    var fi: Self {
-        .init(rawValue: 0x6669)
+    var FI: Self {
+        .init(rawValue: 0x4649)
     }
     @inlinable public static
-    var fj: Self {
-        .init(rawValue: 0x666a)
+    var FJ: Self {
+        .init(rawValue: 0x464a)
     }
     @inlinable public static
-    var fk: Self {
-        .init(rawValue: 0x666b)
+    var FK: Self {
+        .init(rawValue: 0x464b)
     }
     @inlinable public static
-    var fm: Self {
-        .init(rawValue: 0x666d)
+    var FM: Self {
+        .init(rawValue: 0x464d)
     }
     @inlinable public static
-    var fo: Self {
-        .init(rawValue: 0x666f)
+    var FO: Self {
+        .init(rawValue: 0x464f)
     }
     @inlinable public static
-    var fr: Self {
-        .init(rawValue: 0x6672)
+    var FR: Self {
+        .init(rawValue: 0x4652)
     }
     @inlinable public static
-    var ga: Self {
-        .init(rawValue: 0x6761)
+    var GA: Self {
+        .init(rawValue: 0x4741)
     }
     @inlinable public static
-    var gb: Self {
-        .init(rawValue: 0x6762)
+    var GB: Self {
+        .init(rawValue: 0x4742)
     }
     @inlinable public static
-    var gd: Self {
-        .init(rawValue: 0x6764)
+    var GD: Self {
+        .init(rawValue: 0x4744)
     }
     @inlinable public static
-    var ge: Self {
-        .init(rawValue: 0x6765)
+    var GE: Self {
+        .init(rawValue: 0x4745)
     }
     @inlinable public static
-    var gf: Self {
-        .init(rawValue: 0x6766)
+    var GF: Self {
+        .init(rawValue: 0x4746)
     }
     @inlinable public static
-    var gg: Self {
-        .init(rawValue: 0x6767)
+    var GG: Self {
+        .init(rawValue: 0x4747)
     }
     @inlinable public static
-    var gh: Self {
-        .init(rawValue: 0x6768)
+    var GH: Self {
+        .init(rawValue: 0x4748)
     }
     @inlinable public static
-    var gi: Self {
-        .init(rawValue: 0x6769)
+    var GI: Self {
+        .init(rawValue: 0x4749)
     }
     @inlinable public static
-    var gl: Self {
-        .init(rawValue: 0x676c)
+    var GL: Self {
+        .init(rawValue: 0x474c)
     }
     @inlinable public static
-    var gm: Self {
-        .init(rawValue: 0x676d)
+    var GM: Self {
+        .init(rawValue: 0x474d)
     }
     @inlinable public static
-    var gn: Self {
-        .init(rawValue: 0x676e)
+    var GN: Self {
+        .init(rawValue: 0x474e)
     }
     @inlinable public static
-    var gp: Self {
-        .init(rawValue: 0x6770)
+    var GP: Self {
+        .init(rawValue: 0x4750)
     }
     @inlinable public static
-    var gq: Self {
-        .init(rawValue: 0x6771)
+    var GQ: Self {
+        .init(rawValue: 0x4751)
     }
     @inlinable public static
-    var gr: Self {
-        .init(rawValue: 0x6772)
+    var GR: Self {
+        .init(rawValue: 0x4752)
     }
     @inlinable public static
-    var gs: Self {
-        .init(rawValue: 0x6773)
+    var GS: Self {
+        .init(rawValue: 0x4753)
     }
     @inlinable public static
-    var gt: Self {
-        .init(rawValue: 0x6774)
+    var GT: Self {
+        .init(rawValue: 0x4754)
     }
     @inlinable public static
-    var gu: Self {
-        .init(rawValue: 0x6775)
+    var GU: Self {
+        .init(rawValue: 0x4755)
     }
     @inlinable public static
-    var gw: Self {
-        .init(rawValue: 0x6777)
+    var GW: Self {
+        .init(rawValue: 0x4757)
     }
     @inlinable public static
-    var gy: Self {
-        .init(rawValue: 0x6779)
+    var GY: Self {
+        .init(rawValue: 0x4759)
     }
     @inlinable public static
-    var hk: Self {
-        .init(rawValue: 0x686b)
+    var HK: Self {
+        .init(rawValue: 0x484b)
     }
     @inlinable public static
-    var hm: Self {
-        .init(rawValue: 0x686d)
+    var HM: Self {
+        .init(rawValue: 0x484d)
     }
     @inlinable public static
-    var hn: Self {
-        .init(rawValue: 0x686e)
+    var HN: Self {
+        .init(rawValue: 0x484e)
     }
     @inlinable public static
-    var hr: Self {
-        .init(rawValue: 0x6872)
+    var HR: Self {
+        .init(rawValue: 0x4852)
     }
     @inlinable public static
-    var ht: Self {
-        .init(rawValue: 0x6874)
+    var HT: Self {
+        .init(rawValue: 0x4854)
     }
     @inlinable public static
-    var hu: Self {
-        .init(rawValue: 0x6875)
+    var HU: Self {
+        .init(rawValue: 0x4855)
     }
     @inlinable public static
-    var id: Self {
-        .init(rawValue: 0x6964)
+    var ID: Self {
+        .init(rawValue: 0x4944)
     }
     @inlinable public static
-    var ie: Self {
-        .init(rawValue: 0x6965)
+    var IE: Self {
+        .init(rawValue: 0x4945)
     }
     @inlinable public static
-    var il: Self {
-        .init(rawValue: 0x696c)
+    var IL: Self {
+        .init(rawValue: 0x494c)
     }
     @inlinable public static
-    var im: Self {
-        .init(rawValue: 0x696d)
+    var IM: Self {
+        .init(rawValue: 0x494d)
     }
     @inlinable public static
-    var `in`: Self {
-        .init(rawValue: 0x696e)
+    var IN: Self {
+        .init(rawValue: 0x494e)
     }
     @inlinable public static
-    var io: Self {
-        .init(rawValue: 0x696f)
+    var IO: Self {
+        .init(rawValue: 0x494f)
     }
     @inlinable public static
-    var iq: Self {
-        .init(rawValue: 0x6971)
+    var IQ: Self {
+        .init(rawValue: 0x4951)
     }
     @inlinable public static
-    var ir: Self {
-        .init(rawValue: 0x6972)
+    var IR: Self {
+        .init(rawValue: 0x4952)
     }
     @inlinable public static
-    var `is`: Self {
-        .init(rawValue: 0x6973)
+    var IS: Self {
+        .init(rawValue: 0x4953)
     }
     @inlinable public static
-    var it: Self {
-        .init(rawValue: 0x6974)
+    var IT: Self {
+        .init(rawValue: 0x4954)
     }
     @inlinable public static
-    var je: Self {
-        .init(rawValue: 0x6a65)
+    var JE: Self {
+        .init(rawValue: 0x4a45)
     }
     @inlinable public static
-    var jm: Self {
-        .init(rawValue: 0x6a6d)
+    var JM: Self {
+        .init(rawValue: 0x4a4d)
     }
     @inlinable public static
-    var jo: Self {
-        .init(rawValue: 0x6a6f)
+    var JO: Self {
+        .init(rawValue: 0x4a4f)
     }
     @inlinable public static
-    var jp: Self {
-        .init(rawValue: 0x6a70)
+    var JP: Self {
+        .init(rawValue: 0x4a50)
     }
     @inlinable public static
-    var ke: Self {
-        .init(rawValue: 0x6b65)
+    var KE: Self {
+        .init(rawValue: 0x4b45)
     }
     @inlinable public static
-    var kg: Self {
-        .init(rawValue: 0x6b67)
+    var KG: Self {
+        .init(rawValue: 0x4b47)
     }
     @inlinable public static
-    var kh: Self {
-        .init(rawValue: 0x6b68)
+    var KH: Self {
+        .init(rawValue: 0x4b48)
     }
     @inlinable public static
-    var ki: Self {
-        .init(rawValue: 0x6b69)
+    var KI: Self {
+        .init(rawValue: 0x4b49)
     }
     @inlinable public static
-    var km: Self {
-        .init(rawValue: 0x6b6d)
+    var KM: Self {
+        .init(rawValue: 0x4b4d)
     }
     @inlinable public static
-    var kn: Self {
-        .init(rawValue: 0x6b6e)
+    var KN: Self {
+        .init(rawValue: 0x4b4e)
     }
     @inlinable public static
-    var kp: Self {
-        .init(rawValue: 0x6b70)
+    var KP: Self {
+        .init(rawValue: 0x4b50)
     }
     @inlinable public static
-    var kr: Self {
-        .init(rawValue: 0x6b72)
+    var KR: Self {
+        .init(rawValue: 0x4b52)
     }
     @inlinable public static
-    var kw: Self {
-        .init(rawValue: 0x6b77)
+    var KW: Self {
+        .init(rawValue: 0x4b57)
     }
     @inlinable public static
-    var ky: Self {
-        .init(rawValue: 0x6b79)
+    var KY: Self {
+        .init(rawValue: 0x4b59)
     }
     @inlinable public static
-    var kz: Self {
-        .init(rawValue: 0x6b7a)
+    var KZ: Self {
+        .init(rawValue: 0x4b5a)
     }
     @inlinable public static
-    var la: Self {
-        .init(rawValue: 0x6c61)
+    var LA: Self {
+        .init(rawValue: 0x4c41)
     }
     @inlinable public static
-    var lb: Self {
-        .init(rawValue: 0x6c62)
+    var LB: Self {
+        .init(rawValue: 0x4c42)
     }
     @inlinable public static
-    var lc: Self {
-        .init(rawValue: 0x6c63)
+    var LC: Self {
+        .init(rawValue: 0x4c43)
     }
     @inlinable public static
-    var li: Self {
-        .init(rawValue: 0x6c69)
+    var LI: Self {
+        .init(rawValue: 0x4c49)
     }
     @inlinable public static
-    var lk: Self {
-        .init(rawValue: 0x6c6b)
+    var LK: Self {
+        .init(rawValue: 0x4c4b)
     }
     @inlinable public static
-    var lr: Self {
-        .init(rawValue: 0x6c72)
+    var LR: Self {
+        .init(rawValue: 0x4c52)
     }
     @inlinable public static
-    var ls: Self {
-        .init(rawValue: 0x6c73)
+    var LS: Self {
+        .init(rawValue: 0x4c53)
     }
     @inlinable public static
-    var lt: Self {
-        .init(rawValue: 0x6c74)
+    var LT: Self {
+        .init(rawValue: 0x4c54)
     }
     @inlinable public static
-    var lu: Self {
-        .init(rawValue: 0x6c75)
+    var LU: Self {
+        .init(rawValue: 0x4c55)
     }
     @inlinable public static
-    var lv: Self {
-        .init(rawValue: 0x6c76)
+    var LV: Self {
+        .init(rawValue: 0x4c56)
     }
     @inlinable public static
-    var ly: Self {
-        .init(rawValue: 0x6c79)
+    var LY: Self {
+        .init(rawValue: 0x4c59)
     }
     @inlinable public static
-    var ma: Self {
-        .init(rawValue: 0x6d61)
+    var MA: Self {
+        .init(rawValue: 0x4d41)
     }
     @inlinable public static
-    var mc: Self {
-        .init(rawValue: 0x6d63)
+    var MC: Self {
+        .init(rawValue: 0x4d43)
     }
     @inlinable public static
-    var md: Self {
-        .init(rawValue: 0x6d64)
+    var MD: Self {
+        .init(rawValue: 0x4d44)
     }
     @inlinable public static
-    var me: Self {
-        .init(rawValue: 0x6d65)
+    var ME: Self {
+        .init(rawValue: 0x4d45)
     }
     @inlinable public static
-    var mf: Self {
-        .init(rawValue: 0x6d66)
+    var MF: Self {
+        .init(rawValue: 0x4d46)
     }
     @inlinable public static
-    var mg: Self {
-        .init(rawValue: 0x6d67)
+    var MG: Self {
+        .init(rawValue: 0x4d47)
     }
     @inlinable public static
-    var mh: Self {
-        .init(rawValue: 0x6d68)
+    var MH: Self {
+        .init(rawValue: 0x4d48)
     }
     @inlinable public static
-    var mk: Self {
-        .init(rawValue: 0x6d6b)
+    var MK: Self {
+        .init(rawValue: 0x4d4b)
     }
     @inlinable public static
-    var ml: Self {
-        .init(rawValue: 0x6d6c)
+    var ML: Self {
+        .init(rawValue: 0x4d4c)
     }
     @inlinable public static
-    var mm: Self {
-        .init(rawValue: 0x6d6d)
+    var MM: Self {
+        .init(rawValue: 0x4d4d)
     }
     @inlinable public static
-    var mn: Self {
-        .init(rawValue: 0x6d6e)
+    var MN: Self {
+        .init(rawValue: 0x4d4e)
     }
     @inlinable public static
-    var mo: Self {
-        .init(rawValue: 0x6d6f)
+    var MO: Self {
+        .init(rawValue: 0x4d4f)
     }
     @inlinable public static
-    var mp: Self {
-        .init(rawValue: 0x6d70)
+    var MP: Self {
+        .init(rawValue: 0x4d50)
     }
     @inlinable public static
-    var mq: Self {
-        .init(rawValue: 0x6d71)
+    var MQ: Self {
+        .init(rawValue: 0x4d51)
     }
     @inlinable public static
-    var mr: Self {
-        .init(rawValue: 0x6d72)
+    var MR: Self {
+        .init(rawValue: 0x4d52)
     }
     @inlinable public static
-    var ms: Self {
-        .init(rawValue: 0x6d73)
+    var MS: Self {
+        .init(rawValue: 0x4d53)
     }
     @inlinable public static
-    var mt: Self {
-        .init(rawValue: 0x6d74)
+    var MT: Self {
+        .init(rawValue: 0x4d54)
     }
     @inlinable public static
-    var mu: Self {
-        .init(rawValue: 0x6d75)
+    var MU: Self {
+        .init(rawValue: 0x4d55)
     }
     @inlinable public static
-    var mv: Self {
-        .init(rawValue: 0x6d76)
+    var MV: Self {
+        .init(rawValue: 0x4d56)
     }
     @inlinable public static
-    var mw: Self {
-        .init(rawValue: 0x6d77)
+    var MW: Self {
+        .init(rawValue: 0x4d57)
     }
     @inlinable public static
-    var mx: Self {
-        .init(rawValue: 0x6d78)
+    var MX: Self {
+        .init(rawValue: 0x4d58)
     }
     @inlinable public static
-    var my: Self {
-        .init(rawValue: 0x6d79)
+    var MY: Self {
+        .init(rawValue: 0x4d59)
     }
     @inlinable public static
-    var mz: Self {
-        .init(rawValue: 0x6d7a)
+    var MZ: Self {
+        .init(rawValue: 0x4d5a)
     }
     @inlinable public static
-    var na: Self {
-        .init(rawValue: 0x6e61)
+    var NA: Self {
+        .init(rawValue: 0x4e41)
     }
     @inlinable public static
-    var nc: Self {
-        .init(rawValue: 0x6e63)
+    var NC: Self {
+        .init(rawValue: 0x4e43)
     }
     @inlinable public static
-    var ne: Self {
-        .init(rawValue: 0x6e65)
+    var NE: Self {
+        .init(rawValue: 0x4e45)
     }
     @inlinable public static
-    var nf: Self {
-        .init(rawValue: 0x6e66)
+    var NF: Self {
+        .init(rawValue: 0x4e46)
     }
     @inlinable public static
-    var ng: Self {
-        .init(rawValue: 0x6e67)
+    var NG: Self {
+        .init(rawValue: 0x4e47)
     }
     @inlinable public static
-    var ni: Self {
-        .init(rawValue: 0x6e69)
+    var NI: Self {
+        .init(rawValue: 0x4e49)
     }
     @inlinable public static
-    var nl: Self {
-        .init(rawValue: 0x6e6c)
+    var NL: Self {
+        .init(rawValue: 0x4e4c)
     }
     @inlinable public static
-    var no: Self {
-        .init(rawValue: 0x6e6f)
+    var NO: Self {
+        .init(rawValue: 0x4e4f)
     }
     @inlinable public static
-    var np: Self {
-        .init(rawValue: 0x6e70)
+    var NP: Self {
+        .init(rawValue: 0x4e50)
     }
     @inlinable public static
-    var nr: Self {
-        .init(rawValue: 0x6e72)
+    var NR: Self {
+        .init(rawValue: 0x4e52)
     }
     @inlinable public static
-    var nu: Self {
-        .init(rawValue: 0x6e75)
+    var NU: Self {
+        .init(rawValue: 0x4e55)
     }
     @inlinable public static
-    var nz: Self {
-        .init(rawValue: 0x6e7a)
+    var NZ: Self {
+        .init(rawValue: 0x4e5a)
     }
     @inlinable public static
-    var om: Self {
-        .init(rawValue: 0x6f6d)
+    var OM: Self {
+        .init(rawValue: 0x4f4d)
     }
     @inlinable public static
-    var pa: Self {
-        .init(rawValue: 0x7061)
+    var PA: Self {
+        .init(rawValue: 0x5041)
     }
     @inlinable public static
-    var pe: Self {
-        .init(rawValue: 0x7065)
+    var PE: Self {
+        .init(rawValue: 0x5045)
     }
     @inlinable public static
-    var pf: Self {
-        .init(rawValue: 0x7066)
+    var PF: Self {
+        .init(rawValue: 0x5046)
     }
     @inlinable public static
-    var pg: Self {
-        .init(rawValue: 0x7067)
+    var PG: Self {
+        .init(rawValue: 0x5047)
     }
     @inlinable public static
-    var ph: Self {
-        .init(rawValue: 0x7068)
+    var PH: Self {
+        .init(rawValue: 0x5048)
     }
     @inlinable public static
-    var pk: Self {
-        .init(rawValue: 0x706b)
+    var PK: Self {
+        .init(rawValue: 0x504b)
     }
     @inlinable public static
-    var pl: Self {
-        .init(rawValue: 0x706c)
+    var PL: Self {
+        .init(rawValue: 0x504c)
     }
     @inlinable public static
-    var pm: Self {
-        .init(rawValue: 0x706d)
+    var PM: Self {
+        .init(rawValue: 0x504d)
     }
     @inlinable public static
-    var pn: Self {
-        .init(rawValue: 0x706e)
+    var PN: Self {
+        .init(rawValue: 0x504e)
     }
     @inlinable public static
-    var pr: Self {
-        .init(rawValue: 0x7072)
+    var PR: Self {
+        .init(rawValue: 0x5052)
     }
     @inlinable public static
-    var pt: Self {
-        .init(rawValue: 0x7074)
+    var PT: Self {
+        .init(rawValue: 0x5054)
     }
     @inlinable public static
-    var pw: Self {
-        .init(rawValue: 0x7077)
+    var PW: Self {
+        .init(rawValue: 0x5057)
     }
     @inlinable public static
-    var py: Self {
-        .init(rawValue: 0x7079)
+    var PY: Self {
+        .init(rawValue: 0x5059)
     }
     @inlinable public static
-    var qa: Self {
-        .init(rawValue: 0x7161)
+    var QA: Self {
+        .init(rawValue: 0x5141)
     }
     @inlinable public static
-    var re: Self {
-        .init(rawValue: 0x7265)
+    var RE: Self {
+        .init(rawValue: 0x5245)
     }
     @inlinable public static
-    var ro: Self {
-        .init(rawValue: 0x726f)
+    var RO: Self {
+        .init(rawValue: 0x524f)
     }
     @inlinable public static
-    var rs: Self {
-        .init(rawValue: 0x7273)
+    var RS: Self {
+        .init(rawValue: 0x5253)
     }
     @inlinable public static
-    var ru: Self {
-        .init(rawValue: 0x7275)
+    var RU: Self {
+        .init(rawValue: 0x5255)
     }
     @inlinable public static
-    var rw: Self {
-        .init(rawValue: 0x7277)
+    var RW: Self {
+        .init(rawValue: 0x5257)
     }
     @inlinable public static
-    var sa: Self {
-        .init(rawValue: 0x7361)
+    var SA: Self {
+        .init(rawValue: 0x5341)
     }
     @inlinable public static
-    var sb: Self {
-        .init(rawValue: 0x7362)
+    var SB: Self {
+        .init(rawValue: 0x5342)
     }
     @inlinable public static
-    var sc: Self {
-        .init(rawValue: 0x7363)
+    var SC: Self {
+        .init(rawValue: 0x5343)
     }
     @inlinable public static
-    var sd: Self {
-        .init(rawValue: 0x7364)
+    var SD: Self {
+        .init(rawValue: 0x5344)
     }
     @inlinable public static
-    var se: Self {
-        .init(rawValue: 0x7365)
+    var SE: Self {
+        .init(rawValue: 0x5345)
     }
     @inlinable public static
-    var sg: Self {
-        .init(rawValue: 0x7367)
+    var SG: Self {
+        .init(rawValue: 0x5347)
     }
     @inlinable public static
-    var sh: Self {
-        .init(rawValue: 0x7368)
+    var SH: Self {
+        .init(rawValue: 0x5348)
     }
     @inlinable public static
-    var si: Self {
-        .init(rawValue: 0x7369)
+    var SI: Self {
+        .init(rawValue: 0x5349)
     }
     @inlinable public static
-    var sj: Self {
-        .init(rawValue: 0x736a)
+    var SJ: Self {
+        .init(rawValue: 0x534a)
     }
     @inlinable public static
-    var sk: Self {
-        .init(rawValue: 0x736b)
+    var SK: Self {
+        .init(rawValue: 0x534b)
     }
     @inlinable public static
-    var sl: Self {
-        .init(rawValue: 0x736c)
+    var SL: Self {
+        .init(rawValue: 0x534c)
     }
     @inlinable public static
-    var sm: Self {
-        .init(rawValue: 0x736d)
+    var SM: Self {
+        .init(rawValue: 0x534d)
     }
     @inlinable public static
-    var sn: Self {
-        .init(rawValue: 0x736e)
+    var SN: Self {
+        .init(rawValue: 0x534e)
     }
     @inlinable public static
-    var so: Self {
-        .init(rawValue: 0x736f)
+    var SO: Self {
+        .init(rawValue: 0x534f)
     }
     @inlinable public static
-    var sr: Self {
-        .init(rawValue: 0x7372)
+    var SR: Self {
+        .init(rawValue: 0x5352)
     }
     @inlinable public static
-    var ss: Self {
-        .init(rawValue: 0x7373)
+    var SS: Self {
+        .init(rawValue: 0x5353)
     }
     @inlinable public static
-    var st: Self {
-        .init(rawValue: 0x7374)
+    var ST: Self {
+        .init(rawValue: 0x5354)
     }
     @inlinable public static
-    var sv: Self {
-        .init(rawValue: 0x7376)
+    var SV: Self {
+        .init(rawValue: 0x5356)
     }
     @inlinable public static
-    var sx: Self {
-        .init(rawValue: 0x7378)
+    var SX: Self {
+        .init(rawValue: 0x5358)
     }
     @inlinable public static
-    var sy: Self {
-        .init(rawValue: 0x7379)
+    var SY: Self {
+        .init(rawValue: 0x5359)
     }
     @inlinable public static
-    var sz: Self {
-        .init(rawValue: 0x737a)
+    var SZ: Self {
+        .init(rawValue: 0x535a)
     }
     @inlinable public static
-    var tc: Self {
-        .init(rawValue: 0x7463)
+    var TC: Self {
+        .init(rawValue: 0x5443)
     }
     @inlinable public static
-    var td: Self {
-        .init(rawValue: 0x7464)
+    var TD: Self {
+        .init(rawValue: 0x5444)
     }
     @inlinable public static
-    var tf: Self {
-        .init(rawValue: 0x7466)
+    var TF: Self {
+        .init(rawValue: 0x5446)
     }
     @inlinable public static
-    var tg: Self {
-        .init(rawValue: 0x7467)
+    var TG: Self {
+        .init(rawValue: 0x5447)
     }
     @inlinable public static
-    var th: Self {
-        .init(rawValue: 0x7468)
+    var TH: Self {
+        .init(rawValue: 0x5448)
     }
     @inlinable public static
-    var tj: Self {
-        .init(rawValue: 0x746a)
+    var TJ: Self {
+        .init(rawValue: 0x544a)
     }
     @inlinable public static
-    var tk: Self {
-        .init(rawValue: 0x746b)
+    var TK: Self {
+        .init(rawValue: 0x544b)
     }
     @inlinable public static
-    var tl: Self {
-        .init(rawValue: 0x746c)
+    var TL: Self {
+        .init(rawValue: 0x544c)
     }
     @inlinable public static
-    var tm: Self {
-        .init(rawValue: 0x746d)
+    var TM: Self {
+        .init(rawValue: 0x544d)
     }
     @inlinable public static
-    var tn: Self {
-        .init(rawValue: 0x746e)
+    var TN: Self {
+        .init(rawValue: 0x544e)
     }
     @inlinable public static
-    var to: Self {
-        .init(rawValue: 0x746f)
+    var TO: Self {
+        .init(rawValue: 0x544f)
     }
     @inlinable public static
-    var tr: Self {
-        .init(rawValue: 0x7472)
+    var TR: Self {
+        .init(rawValue: 0x5452)
     }
     @inlinable public static
-    var tt: Self {
-        .init(rawValue: 0x7474)
+    var TT: Self {
+        .init(rawValue: 0x5454)
     }
     @inlinable public static
-    var tv: Self {
-        .init(rawValue: 0x7476)
+    var TV: Self {
+        .init(rawValue: 0x5456)
     }
     @inlinable public static
-    var tz: Self {
-        .init(rawValue: 0x747a)
+    var TZ: Self {
+        .init(rawValue: 0x545a)
     }
     @inlinable public static
-    var ua: Self {
-        .init(rawValue: 0x7561)
+    var UA: Self {
+        .init(rawValue: 0x5541)
     }
     @inlinable public static
-    var ug: Self {
-        .init(rawValue: 0x7567)
+    var UG: Self {
+        .init(rawValue: 0x5547)
     }
     @inlinable public static
-    var um: Self {
-        .init(rawValue: 0x756d)
+    var UM: Self {
+        .init(rawValue: 0x554d)
     }
     @inlinable public static
-    var us: Self {
-        .init(rawValue: 0x7573)
+    var US: Self {
+        .init(rawValue: 0x5553)
     }
     @inlinable public static
-    var uy: Self {
-        .init(rawValue: 0x7579)
+    var UY: Self {
+        .init(rawValue: 0x5559)
     }
     @inlinable public static
-    var uz: Self {
-        .init(rawValue: 0x757a)
+    var UZ: Self {
+        .init(rawValue: 0x555a)
     }
     @inlinable public static
-    var va: Self {
-        .init(rawValue: 0x7661)
+    var VA: Self {
+        .init(rawValue: 0x5641)
     }
     @inlinable public static
-    var vc: Self {
-        .init(rawValue: 0x7663)
+    var VC: Self {
+        .init(rawValue: 0x5643)
     }
     @inlinable public static
-    var ve: Self {
-        .init(rawValue: 0x7665)
+    var VE: Self {
+        .init(rawValue: 0x5645)
     }
     @inlinable public static
-    var vg: Self {
-        .init(rawValue: 0x7667)
+    var VG: Self {
+        .init(rawValue: 0x5647)
     }
     @inlinable public static
-    var vi: Self {
-        .init(rawValue: 0x7669)
+    var VI: Self {
+        .init(rawValue: 0x5649)
     }
     @inlinable public static
-    var vn: Self {
-        .init(rawValue: 0x766e)
+    var VN: Self {
+        .init(rawValue: 0x564e)
     }
     @inlinable public static
-    var vu: Self {
-        .init(rawValue: 0x7675)
+    var VU: Self {
+        .init(rawValue: 0x5655)
     }
     @inlinable public static
-    var wf: Self {
-        .init(rawValue: 0x7766)
+    var WF: Self {
+        .init(rawValue: 0x5746)
     }
     @inlinable public static
-    var ws: Self {
-        .init(rawValue: 0x7773)
+    var WS: Self {
+        .init(rawValue: 0x5753)
     }
     @inlinable public static
-    var ye: Self {
-        .init(rawValue: 0x7965)
+    var YE: Self {
+        .init(rawValue: 0x5945)
     }
     @inlinable public static
-    var yt: Self {
-        .init(rawValue: 0x7974)
+    var YT: Self {
+        .init(rawValue: 0x5954)
     }
     @inlinable public static
-    var za: Self {
-        .init(rawValue: 0x7a61)
+    var ZA: Self {
+        .init(rawValue: 0x5a41)
     }
     @inlinable public static
-    var zm: Self {
-        .init(rawValue: 0x7a6d)
+    var ZM: Self {
+        .init(rawValue: 0x5a4d)
     }
     @inlinable public static
-    var zw: Self {
-        .init(rawValue: 0x7a77)
+    var ZW: Self {
+        .init(rawValue: 0x5a57)
     }
     @inlinable public static
-    var aa: Self {
-        .init(rawValue: 0x6161)
+    var AA: Self {
+        .init(rawValue: 0x4141)
     }
     @inlinable public static
-    var oo: Self {
-        .init(rawValue: 0x6f6f)
+    var OO: Self {
+        .init(rawValue: 0x4f4f)
     }
     @inlinable public static
-    var qm: Self {
-        .init(rawValue: 0x716d)
+    var QM: Self {
+        .init(rawValue: 0x514d)
     }
     @inlinable public static
-    var qn: Self {
-        .init(rawValue: 0x716e)
+    var QN: Self {
+        .init(rawValue: 0x514e)
     }
     @inlinable public static
-    var qo: Self {
-        .init(rawValue: 0x716f)
+    var QO: Self {
+        .init(rawValue: 0x514f)
     }
     @inlinable public static
-    var qp: Self {
-        .init(rawValue: 0x7170)
+    var QP: Self {
+        .init(rawValue: 0x5150)
     }
     @inlinable public static
-    var qq: Self {
-        .init(rawValue: 0x7171)
+    var QQ: Self {
+        .init(rawValue: 0x5151)
     }
     @inlinable public static
-    var qr: Self {
-        .init(rawValue: 0x7172)
+    var QR: Self {
+        .init(rawValue: 0x5152)
     }
     @inlinable public static
-    var qs: Self {
-        .init(rawValue: 0x7173)
+    var QS: Self {
+        .init(rawValue: 0x5153)
     }
     @inlinable public static
-    var qt: Self {
-        .init(rawValue: 0x7174)
+    var QT: Self {
+        .init(rawValue: 0x5154)
     }
     @inlinable public static
-    var qu: Self {
-        .init(rawValue: 0x7175)
+    var QU: Self {
+        .init(rawValue: 0x5155)
     }
     @inlinable public static
-    var qv: Self {
-        .init(rawValue: 0x7176)
+    var QV: Self {
+        .init(rawValue: 0x5156)
     }
     @inlinable public static
-    var qw: Self {
-        .init(rawValue: 0x7177)
+    var QW: Self {
+        .init(rawValue: 0x5157)
     }
     @inlinable public static
-    var qx: Self {
-        .init(rawValue: 0x7178)
+    var QX: Self {
+        .init(rawValue: 0x5158)
     }
     @inlinable public static
-    var qy: Self {
-        .init(rawValue: 0x7179)
+    var QY: Self {
+        .init(rawValue: 0x5159)
     }
     @inlinable public static
-    var qz: Self {
-        .init(rawValue: 0x717a)
+    var QZ: Self {
+        .init(rawValue: 0x515a)
     }
     @inlinable public static
-    var xa: Self {
-        .init(rawValue: 0x7861)
+    var XA: Self {
+        .init(rawValue: 0x5841)
     }
     @inlinable public static
-    var xb: Self {
-        .init(rawValue: 0x7862)
+    var XB: Self {
+        .init(rawValue: 0x5842)
     }
     @inlinable public static
-    var xc: Self {
-        .init(rawValue: 0x7863)
+    var XC: Self {
+        .init(rawValue: 0x5843)
     }
     @inlinable public static
-    var xd: Self {
-        .init(rawValue: 0x7864)
+    var XD: Self {
+        .init(rawValue: 0x5844)
     }
     @inlinable public static
-    var xe: Self {
-        .init(rawValue: 0x7865)
+    var XE: Self {
+        .init(rawValue: 0x5845)
     }
     @inlinable public static
-    var xf: Self {
-        .init(rawValue: 0x7866)
+    var XF: Self {
+        .init(rawValue: 0x5846)
     }
     @inlinable public static
-    var xg: Self {
-        .init(rawValue: 0x7867)
+    var XG: Self {
+        .init(rawValue: 0x5847)
     }
     @inlinable public static
-    var xh: Self {
-        .init(rawValue: 0x7868)
+    var XH: Self {
+        .init(rawValue: 0x5848)
     }
     @inlinable public static
-    var xi: Self {
-        .init(rawValue: 0x7869)
+    var XI: Self {
+        .init(rawValue: 0x5849)
     }
     @inlinable public static
-    var xj: Self {
-        .init(rawValue: 0x786a)
+    var XJ: Self {
+        .init(rawValue: 0x584a)
     }
     @inlinable public static
-    var xk: Self {
-        .init(rawValue: 0x786b)
+    var XK: Self {
+        .init(rawValue: 0x584b)
     }
     @inlinable public static
-    var xl: Self {
-        .init(rawValue: 0x786c)
+    var XL: Self {
+        .init(rawValue: 0x584c)
     }
     @inlinable public static
-    var xm: Self {
-        .init(rawValue: 0x786d)
+    var XM: Self {
+        .init(rawValue: 0x584d)
     }
     @inlinable public static
-    var xn: Self {
-        .init(rawValue: 0x786e)
+    var XN: Self {
+        .init(rawValue: 0x584e)
     }
     @inlinable public static
-    var xo: Self {
-        .init(rawValue: 0x786f)
+    var XO: Self {
+        .init(rawValue: 0x584f)
     }
     @inlinable public static
-    var xp: Self {
-        .init(rawValue: 0x7870)
+    var XP: Self {
+        .init(rawValue: 0x5850)
     }
     @inlinable public static
-    var xq: Self {
-        .init(rawValue: 0x7871)
+    var XQ: Self {
+        .init(rawValue: 0x5851)
     }
     @inlinable public static
-    var xr: Self {
-        .init(rawValue: 0x7872)
+    var XR: Self {
+        .init(rawValue: 0x5852)
     }
     @inlinable public static
-    var xs: Self {
-        .init(rawValue: 0x7873)
+    var XS: Self {
+        .init(rawValue: 0x5853)
     }
     @inlinable public static
-    var xt: Self {
-        .init(rawValue: 0x7874)
+    var XT: Self {
+        .init(rawValue: 0x5854)
     }
     @inlinable public static
-    var xu: Self {
-        .init(rawValue: 0x7875)
+    var XU: Self {
+        .init(rawValue: 0x5855)
     }
     @inlinable public static
-    var xv: Self {
-        .init(rawValue: 0x7876)
+    var XV: Self {
+        .init(rawValue: 0x5856)
     }
     @inlinable public static
-    var xw: Self {
-        .init(rawValue: 0x7877)
+    var XW: Self {
+        .init(rawValue: 0x5857)
     }
     @inlinable public static
-    var xx: Self {
-        .init(rawValue: 0x7878)
+    var XX: Self {
+        .init(rawValue: 0x5858)
     }
     @inlinable public static
-    var xy: Self {
-        .init(rawValue: 0x7879)
+    var XY: Self {
+        .init(rawValue: 0x5859)
     }
     @inlinable public static
-    var xz: Self {
-        .init(rawValue: 0x787a)
+    var XZ: Self {
+        .init(rawValue: 0x585a)
     }
     @inlinable public static
-    var zz: Self {
-        .init(rawValue: 0x7a7a)
+    var ZZ: Self {
+        .init(rawValue: 0x5a5a)
     }
 }
 extension ISO.Country:Comparable
