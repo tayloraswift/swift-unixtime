@@ -96,8 +96,8 @@ extension Timestamp.Date:LosslessStringConvertible
 {
     /// Parses the date as `yyyy-mm-dd`.
     ///
-    /// To customize the separator, use ``init(_:separator:) [725PA]`` or
-    /// ``init(_:separator:) [3GRG1]``.
+    /// To customize the separator, use ``init(_:separator:) (String, _)`` or
+    /// ``init(_:separator:) (Substring, _)``.
     @inlinable public
     init?(_ description:String)
     {
